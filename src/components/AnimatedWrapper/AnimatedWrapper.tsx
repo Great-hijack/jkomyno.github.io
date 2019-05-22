@@ -24,7 +24,7 @@ export const AnimatedWrapper: React.SFC<Props> = ({ children }) => {
 
   return (
     <>
-      {React.Children.map<React.ReactNode>(children, fn)}
+      {React.Children.map<React.ReactNode, React.ReactNode>(children, fn)}
     </>
   );
 };
