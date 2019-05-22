@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactGA from 'react-ga';
-import { AnimatedWrapper } from 'src/components/AnimatedWrapper';
-import { LayoutShell } from 'src/components/LayoutShell';
-import { InfoContext, InfoContextType } from 'src/context';
-import { buildEmailAddress } from 'src/helpers';
-import { About, Hero, Profiles, Skills } from 'src/pages';
-import { ProfileLink } from 'src/pages/Profiles';
+import { AnimatedWrapper } from '../components/AnimatedWrapper';
+import { LayoutShell } from '../components/LayoutShell';
+import { InfoContext, InfoContextType } from '../context';
+import { buildEmailAddress } from '../helpers';
+import { About, Hero, Profiles, Skills } from '../pages';
+import { ProfileLink } from '../pages/Profiles';
 
 ReactGA.initialize('UA-126612593-1');
 

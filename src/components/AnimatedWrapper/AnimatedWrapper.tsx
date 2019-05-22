@@ -4,7 +4,7 @@ import InViewMonitor from 'react-inview-monitor';
 import './AnimatedWrapper.css';
 
 interface Props {
-  children: React.ReactNode;
+  children: React.ReactChild[];
 }
 
 /**
@@ -13,7 +13,7 @@ interface Props {
  * borrowed from `https://github.com/daneden/animate.css`.
  */
 export const AnimatedWrapper: React.SFC<Props> = ({ children }) => {
-  const fn = (child: React.ReactChild): React.ReactNode => (
+  const fn = (child: React.ReactChild, index: number): React.ReactNode => (
     <InViewMonitor
       classNameNotInView="is-invisible"
       classNameInView="width-100 animated fade-in-up"
@@ -24,7 +24,7 @@ export const AnimatedWrapper: React.SFC<Props> = ({ children }) => {
 
   return (
     <>
-      {React.Children.map<React.ReactNode, React.ReactNode>(children, fn)}
+      {React.Children.map<React.ReactNode, React.ReactChild>(children, fn)}
     </>
   );
 };

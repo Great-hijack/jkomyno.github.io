@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { ActionButton } from 'src/components/ActionButton';
-import { Matrix } from 'src/components/Matrix';
-import { Section } from 'src/components/Section';
-import { SubTitle, Title } from 'src/components/Text';
-import { InfoContext, InfoContextType } from 'src/context';
+import { ActionButton } from '../../components/ActionButton';
+import { Matrix } from '../../components/Matrix';
+import { Section } from '../../components/Section';
+import { SubTitle, Title } from '../../components/Text';
+import { InfoContext, InfoContextType } from '../../context';
 
 export const Hero: React.SFC<{}> = () => {
   const salute = `Hi, my name is`;

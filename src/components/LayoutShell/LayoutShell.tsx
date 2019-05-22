@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { InfoContext, InfoContextType } from 'src/context';
-import { Content, Footer, Header } from 'src/layouts';
+import { InfoContext, InfoContextType } from '../../context';
+import { Content, Footer, Header } from '../../layouts';
 import { GithubLogo } from './GithubLogo';
 import { Logo } from './Logo';
 
@@ -19,11 +19,12 @@ export const LayoutShell: React.SFC<Props> = ({ children, color, headerElement }
     </span>
   );
 
-  const renderHeader = ({ repository }: InfoContextType ) => (
+  const renderHeader = (context: InfoContextType ) => (
     <Header
       Logo={BrandElement}
       ExternalElement={ExternalElement}
-      externalUrl={repository} />
+      externalUrl={context.repository}
+    />
   );
 
   const renderFooter = ({ author, authorUrl, techStack }: InfoContextType) => (
@@ -36,7 +37,7 @@ export const LayoutShell: React.SFC<Props> = ({ children, color, headerElement }
 
   const HeaderComponent = (
     <InfoContext.Consumer>
-      {renderHeader}        
+      {renderHeader}      
     </InfoContext.Consumer>
   );
   const Portal = ReactDOM.createPortal(HeaderComponent, headerElement);

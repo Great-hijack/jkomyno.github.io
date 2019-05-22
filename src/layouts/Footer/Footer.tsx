@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Link } from 'src/components/Link';
-import { Overview } from 'src/components/Text';
-import { joinAnd } from 'src/helpers';
+import { Link } from '../../components/Link';
+import { Overview } from '../../components/Text';
+import { joinAnd } from '../../helpers';
 import './Footer.css';
 
 interface Props {

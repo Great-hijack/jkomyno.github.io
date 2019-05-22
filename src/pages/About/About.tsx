@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Link } from 'src/components/Link';
-import { Section } from 'src/components/Section';
-import { Description } from 'src/components/Text';
-import { InfoContext, InfoContextType } from 'src/context';
+import { Link } from '../../components/Link';
+import { Section } from '../../components/Section';
+import { Description } from '../../components/Text';
+import { InfoContext, InfoContextType } from '../../context';
 
 export const Opportunities: React.SFC<{ email: string }> = ({ email }) => {
   const opportunities = {

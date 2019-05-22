@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Section } from 'src/components/Section';
+import { Section } from '../../components/Section';
 import './Skills.css';
 
 interface Props {

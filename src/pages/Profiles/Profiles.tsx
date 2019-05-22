@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Link } from 'src/components/Link';
-import { Section } from 'src/components/Section';
+import { Link } from '../../components/Link';
+import { Section } from '../../components/Section';
 
 export interface ProfileLink {
   link: string,

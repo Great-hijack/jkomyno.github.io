@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'src/components/Link';
+import { Link } from '../../components/Link';
 import './Header.css';
 
 interface Props {

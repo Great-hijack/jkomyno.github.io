@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Column } from 'src/components/Column';
+import { Column } from '../../components/Column';
 import { Link } from '../Link';
 import './ActionButton.css';
 

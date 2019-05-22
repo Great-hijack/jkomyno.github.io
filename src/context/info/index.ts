@@ -11,4 +11,5 @@ export interface InfoContextType {
   techStack: string[];
 };
 
-export const InfoContext: React.Context<InfoContextType|{}> = React.createContext({});
+let defaultValue: InfoContextType | undefined = undefined;
+export const InfoContext: React.Context<InfoContextType> = React.createContext(defaultValue!);
