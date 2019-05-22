@@ -49,7 +49,7 @@ export class App extends React.PureComponent {
     const nickname = 'jkomyno';
     const authorUrl = `https://github.com/${nickname}`;
     const repository = `${authorUrl}/jkomyno.github.io`;
-    const resumeUrl = `${repository}/raw/master/resume.pdf`
+    const resumeUrl = `${repository}/raw/master/resume-Alberto_Schiabel.pdf`
 
     return {
       author,
