@@ -21,14 +21,22 @@ export const About: React.SFC<{}> = () => {
     androidiani: <Link newTab label="Androidiani" url="http://www.androidiani.com" />,
     brainwise: <Link newTab label="Brainwise" url="https://brainwise.it" />,
     skydreamer: <Link newTab label="Skydreamer" url="https://www.crunchbase.com/organization/skydreamer" />,
+    autoencoders: <Link newTab label="convolutional Autoencoders"
+                    url="https://colab.research.google.com/drive/1VUeii7JAw11bRAXwhtpWDc0DoXhwzdGF"
+                  />,
   }
   const experience = {
     onSite: `as well as on-site`,
     remote: `I have experience in working with remote-only teams`,
   };
-  const study = `I'm a third year Computer Science student at the University of
-                Padova. I'm curious and passionate about advanced math topics, programming
-                paradigms and software engineering best practices.`;
+  const study = `I'm a Master's student graduating in Computer Science at the University of
+                Padova. I graduated with a Bachelor's Degree in Computer Science in 2019.`;
+
+  const self = `I'm curious and passionate about functional programming,
+                NP-hard algorithms approximations and software engineering best practices.`;
+
+  const ai = `I'm currently studying and strengthening my skills in Machine Learning.
+              I'm particularly interested in`;
 
   const renderOpportunities = ({ authorEmail }: InfoContextType) => (
     <Opportunities email={authorEmail} />
@@ -36,10 +44,16 @@ export const About: React.SFC<{}> = () => {
 
   return (
     <Section section="About" className="about">
-      <Description>{study}</Description>
-      <Description>
+      <Description spaceBottom="small">{study}</Description>
+      <Description>{self}</Description>
+      <Description spaceBottom="small">
         {experience.remote} ({links.skydreamer}, {links.androidiani}) {experience.onSite} ({links.brainwise}).
       </Description>
+
+      <Description>
+        {ai} {links.autoencoders} {'.'}
+      </Description>
+
       <hr />
       <InfoContext.Consumer>
         {renderOpportunities}
