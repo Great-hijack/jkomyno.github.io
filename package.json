@@ -10,7 +10,7 @@
     "react-ga": "^2.5.7",
     "react-inview-monitor": "^2.2.1",
     "react-matrix-text": "^1.1.1",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "3.2.0"
   },
   "homepage": "https://jkomyno.github.io",
   "scripts": {

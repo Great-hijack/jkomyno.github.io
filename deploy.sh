@@ -2,7 +2,7 @@ AUTHOR=jkomyno
 REPOSITORY=$AUTHOR.github.io
 
 # This script assumes that node_modules and build folders exist in source branch.
-# To create them, just run `npm run deploy` or `yarn deploy`.
+# To create them, just run `npm run deploy`.
 git checkout source
 git branch -D master
 
