@@ -70,9 +70,10 @@ export class App extends React.PureComponent {
   private get leftSkills(): string[] {
     return [
       'ReactJS',
-      'CSS3',
       'NodeJS',
-      'TypeScript'
+      'TypeScript',
+      'Python3',
+      'Terraform'
     ];
   }
 
@@ -81,7 +82,8 @@ export class App extends React.PureComponent {
       'Golang',
       'C++14',
       'SQL',
-      '(WIP) AWS'
+      'AWS',
+      'Docker'
     ];
   }
 
